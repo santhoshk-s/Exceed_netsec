@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  margin: 0 !important;
+  width: 100% !important;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden !important;
+  background-color: white !important;
+}
+
+.hero {
+  background: url(./images/hero-bg.svg) top center no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background: url(./images/footer.svg) top center no-repeat;
+  background-size: cover;
+}
+
+.cta {
+  background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) fixed center center;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background-color: #67f529
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(156 163 175 / 0.75);
+  border-radius: 10px;
+}
+
+
+/* Custom styles for the navigation buttons */
+.slick-prev, .slick-next {
+  width: 50px;  /* Increase the width */
+  height: 50px; /* Increase the height */
+  z-index: 1;   /* Ensure they appear above the slider */
+}
+
+.slick-prev:before {
+  font-size: 40px;   /* Increase the icon size */
+  color: rgb(124, 121, 148);    /* Change the icon color (example: tomato) */
+}
+.slick-next:before{
+  font-size: 40px;   /* Increase the icon size */
+  color: rgb(129, 127, 147);
+  
+}
+
+/* Optional: Adjust the position */
+.slick-prev {
+  left: -55px; /* Move the left button more to the left */
+}
+
+.slick-next {
+  right: -20px; /* Move the right button more to the right */
+}
+
+

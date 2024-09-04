@@ -1,0 +1,9 @@
+.slider-container {
+    .slick-slide {
+      padding: 0 10px;
+    }
+  }
+  
+  .slick-dots {
+    bottom: -30px;
+  }
